@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Eduly - Game your brain into learning. Ultra-short educational content that fights brain rot with knowledge.">
-  <meta name="keywords" content="education, learning, short-form, brain rot, tiktok, research, AI, arxiv">
-  <meta property="og:title" content="Eduly - Game Your Brain Into Learning">
-  <meta property="og:description" content="Ultra-short educational content that fights brain rot with knowledge.">
+  <meta name="description" content="Eduly - A Manim coding agent that transforms papers into animated educational videos in the style of 3Blue1Brown.">
+  <meta property="og:title" content="Eduly - Anti-Brainrot Doom Learning">
+  <meta property="og:description" content="A Manim coding agent that transforms papers into animated educational videos.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://eduly.ai">
-  <title>Eduly - Game Your Brain Into Learning</title>
+  <meta property="og:url" content="https://landing.eduly.ai">
+  <title>eduly.ai</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -17,262 +16,247 @@
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo">
-        eduly<span>.ai</span>
+      <a href="https://landing.eduly.ai" class="nav-logo">
+        eduly.ai
       </a>
-      
-      <button class="nav-toggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      
-      <div class="nav-menu">
-        <ul class="nav-links">
-          <li><a href="index.html" class="nav-link active">Home</a></li>
-          <li><a href="motivation.html" class="nav-link">Motivation</a></li>
-          <li><a href="technical.html" class="nav-link">How It Works</a></li>
-          <li><a href="examples.html" class="nav-link">Examples</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-          <li>
-            <button class="theme-toggle" aria-label="Toggle theme">
-              <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-              </svg>
-              <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-              </svg>
-            </button>
-          </li>
-          <li><a href="https://discord.gg/eduly" class="nav-cta" target="_blank" rel="noopener">Join Discord</a></li>
-        </ul>
+      <div class="nav-links-simple">
+        <a href="https://github.com/eduly-ai/eduly" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://discord.gg/C5qT4JmSgZ" target="_blank" rel="noopener">Discord</a>
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
+  <!-- Hero -->
+  <section class="hero-simple">
     <div class="container">
-      <div class="hero-content fade-in">
-        <div class="hero-badge">
-          ⚡ Fighting brain rot with knowledge
+      <p class="tagline">Anti-Brainrot Doom Learning</p>
+      <h1>Game the brain into educating itself.</h1>
+      <p class="hero-desc">
+        Eduly is a <strong>Manim coding agent</strong> that transforms complex papers and documents 
+        into short-form animated educational videos — in the style of 
+        <a href="https://www.3blue1brown.com/" target="_blank" rel="noopener">3Blue1Brown</a>.
+      </p>
+      <div class="hero-links">
+        <a href="https://github.com/eduly-ai/eduly" class="btn btn-primary" target="_blank" rel="noopener">
+          View on GitHub
+        </a>
+        <a href="#how-it-works" class="btn btn-secondary">
+          How it works
+        </a>
+      </div>
+      <p class="built-with">
+        Built with <a href="https://docs.manim.community/en/stable/index.html" target="_blank" rel="noopener">Manim</a> + 
+        <a href="https://deepmind.google/models/gemini/" target="_blank" rel="noopener">Gemini</a> + 
+        <a href="https://github.com/langchain-ai/deepagents" target="_blank" rel="noopener">DeepAgents</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Quick Example & Video Demo -->
+  <section class="section video-showcase" id="example">
+    <div class="container">
+      <div class="showcase-grid">
+        <div class="showcase-code">
+          <h2>Quick Example</h2>
+          <p>Process a paper into animated explainers:</p>
+          <pre><code>from eduly import EdulyBreakdownClient, EdulyAnimationClient
+
+# Break down a PDF into atomic topics
+breakdown, _ = breakdown_client.breakdown(
+    file_path=Path("./paper.pdf"),
+    model="gemini-2.5-flash-preview"
+)
+
+# Generate storyboards for each topic
+for topic in breakdown.topics:
+    storyboard, _ = breakdown_client.storyboard(topic=topic)
+
+# Animate with the Manim agent
+result = animation_client.animate_single(
+    breakdown=breakdown,
+    storyboard=storyboard,
+    max_iterations=5
+)
+
+print(f"Video saved to: {result.video_path}")</code></pre>
+          <p class="example-note">
+            See <a href="https://github.com/eduly-ai/eduly/blob/main/examples/processing.ipynb" target="_blank" rel="noopener">examples/processing.ipynb</a> 
+            for a complete walkthrough.
+          </p>
         </div>
-        <h1 class="hero-title">
-          Game your brain<br>into <span class="highlight">learning</span>
-        </h1>
-        <p class="hero-subtitle">
-          Ultra-short educational videos that deliver knowledge in under 60 seconds. 
-          No paywalls. No barriers. Just swipe and learn.
-        </p>
-        <div class="hero-buttons">
-          <a href="https://discord.gg/eduly" class="btn btn-primary" target="_blank" rel="noopener">
-            Join Our Discord
-          </a>
-          <a href="motivation.html" class="btn btn-secondary">
-            Learn More
-          </a>
+        <div class="showcase-video">
+          <p class="demo-video-label">Prototype output: Multi-Head Attention</p>
+          <video class="demo-video" autoplay loop muted playsinline>
+            <source src="assets/media/MultiHeadAttentionScene_3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Problem Preview -->
-  <section class="content-section">
+  <!-- The Problem -->
+  <section class="section" id="problem">
     <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-label">The Problem</span>
-        <h2 class="section-title">Brain rot is real</h2>
-        <p class="section-desc">
-          Short-form content has rewired how we consume information. 
-          Instead of fighting it, we're harnessing it for good.
-        </p>
+      <h2>The Problem</h2>
+      <p>
+        Since the rise of short-form content (TikTok, YouTube Shorts, Instagram Reels), 
+        "brain-rot" has emerged — cognitive decline from content designed for short attention spans.
+      </p>
+      <p>
+        While governments respond with bans, we think there's a better approach: 
+        <strong>there is no equivalent form of "anti-brain-rot"</strong> — until now.
+      </p>
+      <div class="problem-grid">
+        <div class="problem-item">
+          <span class="problem-icon">💳</span>
+          <strong>Paywalls</strong>
+          <p>$10-20/month discourages students and casual learners</p>
+        </div>
+        <div class="problem-item">
+          <span class="problem-icon">📝</span>
+          <strong>Old formats</strong>
+          <p>Learning styles that haven't evolved in decades</p>
+        </div>
+        <div class="problem-item">
+          <span class="problem-icon">⏱️</span>
+          <strong>High barrier to entry</strong>
+          <p>Between paywalls, signups, and long onboarding — most people never start</p>
+        </div>
       </div>
-      
     </div>
   </section>
 
   <!-- How It Works -->
-  <section class="content-section" style="background: var(--bg-secondary);">
+  <section class="section section-alt" id="how-it-works">
     <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-label">How It Works</span>
-        <h2 class="section-title">Learning, rewired</h2>
-        <p class="section-desc">
-          Three simple steps to transform idle scrolling into active learning.
-        </p>
-      </div>
+      <h2>How It Works</h2>
+      <p>Eduly uses a three-stage pipeline to convert academic papers into animated educational videos:</p>
       
-      <div class="steps stagger-children">
-        <div class="step">
-          <div class="step-number">1</div>
-          <h3 class="step-title">Open</h3>
-          <p>Launch Eduly and instantly dive into a feed of bite-sized knowledge.</p>
+      <div class="pipeline">
+        <div class="pipeline-step">
+          <div class="step-num">1</div>
+          <h3>Document Breakdown</h3>
+          <p>
+            Extract <strong>atomic topics</strong> — self-contained concepts that can stand alone as ~5 minute videos. 
+            Uses Gemini with Google Search to generate comprehensive explanations with modern context.
+          </p>
         </div>
-        <div class="step">
-          <div class="step-number">2</div>
-          <h3 class="step-title">Swipe</h3>
-          <p>Swipe through ultra-short videos explaining complex concepts simply.</p>
+        
+        <div class="pipeline-arrow">→</div>
+        
+        <div class="pipeline-step">
+          <div class="step-num">2</div>
+          <h3>Storyboard Generation</h3>
+          <p>
+            For each topic, generate a <strong>visual storyboard</strong> in the style of 3Blue1Brown — 
+            defining core visual metaphors, 8-15 scenes, and narration optimized for text-to-speech.
+          </p>
         </div>
-        <div class="step">
-          <div class="step-number">3</div>
-          <h3 class="step-title">Learn</h3>
-          <p>Spark curiosity and follow citations to dive deeper when ready.</p>
+        
+        <div class="pipeline-arrow">→</div>
+        
+        <div class="pipeline-step">
+          <div class="step-num">3</div>
+          <h3>Manim Animation Agent</h3>
+          <p>
+            An <strong>iterative coding agent</strong> that researches Manim docs, generates Scene code, 
+            renders animations, and self-corrects on errors — outputting vertical 1080×1920 MP4 videos.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Features Grid -->
-  <section class="content-section">
+  <!-- Future Work -->
+  <section class="section section-alt" id="future">
     <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-label">Why Eduly</span>
-        <h2 class="section-title">Education without barriers</h2>
-      </div>
-      
-      <div class="grid-3 stagger-children">
-        <div class="card">
-          <div class="card-icon">⚡</div>
-          <h3 class="card-title">Ultra Short</h3>
-          <p class="card-desc">Every video is under 60 seconds. Complex ideas, distilled to their essence.</p>
+      <h2>Future Work</h2>
+      <div class="future-grid">
+        <div class="future-item">
+          <strong>Narration & TTS</strong>
+          <p>Integration with ElevenLabs, Google Cloud TTS, voice cloning, multi-language support</p>
         </div>
-        <div class="card">
-          <div class="card-icon">🔓</div>
-          <h3 class="card-title">Forever Free</h3>
-          <p class="card-desc">Free to consume content, always. Knowledge should be accessible to everyone.</p>
+        <div class="future-item">
+          <strong>Web & Mobile App</strong>
+          <p>Mobile-first vertical video player with personalized feeds and social features</p>
         </div>
-        <div class="card">
-          <div class="card-icon">📚</div>
-          <h3 class="card-title">Cited Sources</h3>
-          <p class="card-desc">Every video links back to papers, courses, and resources for deeper learning.</p>
+        <div class="future-item">
+          <strong>Research Monitoring</strong>
+          <p>Automated arXiv monitoring, trending paper detection, auto-generation pipeline</p>
         </div>
-        <div class="card">
-          <div class="card-icon">🔬</div>
-          <h3 class="card-title">Trending Research</h3>
-          <p class="card-desc">Stay current with AI, ML, and emerging tech through arxiv monitoring.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🌐</div>
-          <h3 class="card-title">Open Source</h3>
-          <p class="card-desc">Our agent architecture will be open sourced. Build with us, learn from us.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🎯</div>
-          <h3 class="card-title">Personalized</h3>
-          <p class="card-desc">Content adapts to your interests. From basics to cutting-edge research.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🧠</div>
-          <h3 class="card-title">Anti Brain Rot</h3>
-          <p class="card-desc">Turn mindless scrolling into mindful learning. Same format, better content.</p>
+        <div class="future-item">
+          <strong>LLM-as-Judge Feedback</strong>
+          <p>Multimodal models evaluating rendered videos against storyboards for quality</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Audience Section -->
-  <section class="content-section" style="background: var(--bg-secondary);">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-label">For Everyone</span>
-        <h2 class="section-title">Who is Eduly for?</h2>
-      </div>
-      
-      <div class="grid-3 stagger-children">
-        <div class="card">
-          <div class="card-icon">🎓</div>
-          <h3 class="card-title">Students</h3>
-          <p class="card-desc">Supplement your studies with quick explanations of neural networks, calculus, chemistry, and more.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🔬</div>
-          <h3 class="card-title">Researchers</h3>
-          <p class="card-desc">Keep up with the bombardment of papers. Get the gist of new architectures in seconds.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🌟</div>
-          <h3 class="card-title">Curious Minds</h3>
-          <p class="card-desc">From quantum physics to economics — satisfy your curiosity one swipe at a time.</p>
-        </div>
+  <!-- Get Started -->
+  <section class="section" id="get-started">
+    <div class="container center">
+      <h2>Get Started</h2>
+      <p>
+        Eduly is <strong>Open Source!</strong>
+        Contributions, issues, and discussions are welcome.
+      </p>
+      <div class="get-started-links">
+        <a href="https://github.com/eduly-ai/eduly" class="btn btn-primary" target="_blank" rel="noopener">
+          GitHub Repository
+        </a>
+        <a href="https://discord.gg/C5qT4JmSgZ" class="btn btn-discord" target="_blank" rel="noopener">
+          Join Discord
+        </a>
+        <a href="https://github.com/eduly-ai/eduly#quickstart" class="btn btn-secondary" target="_blank" rel="noopener">
+          Quickstart Guide
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- CTA Section -->
-  <section class="cta-section">
-    <div class="container">
-      <div class="fade-in">
-        <h2 class="cta-title">Ready to rewire your brain?</h2>
-        <p class="cta-desc">
-          Join our Discord community to get early access, share feedback, and help shape the future of education.
-        </p>
-        <a href="https://discord.gg/eduly" class="btn btn-primary" target="_blank" rel="noopener">
-          Join the Community
+  <!-- Acknowledgements -->
+  <section class="section section-alt" id="acknowledgements">
+    <div class="container center">
+      <h2>Acknowledgements</h2>
+      <div class="acknowledgements-grid">
+        <a href="https://docs.manim.community/en/stable/index.html" target="_blank" rel="noopener" class="ack-item">
+          <span class="ack-icon">🎬</span>
+          <strong>Manim Community</strong>
+          <p>The animation engine that makes beautiful mathematical visualizations possible</p>
+        </a>
+        <a href="https://www.langchain.com/" target="_blank" rel="noopener" class="ack-item">
+          <span class="ack-icon">🦜</span>
+          <strong>DeepAgents by LangChain</strong>
+          <p>Framework for building custom coding agents</p>
+        </a>
+        <a href="https://deepmind.google/models/gemini/" target="_blank" rel="noopener" class="ack-item">
+          <span class="ack-icon">✨</span>
+          <strong>Gemini by Google DeepMind</strong>
+          <p>Natively multimodal LLM that powers document, code, video and audio understanding and generation</p>
         </a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer-simple">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="nav-logo">
-            eduly<span>.ai</span>
-          </a>
-          <p>Game your brain into learning. Ultra-short educational content that fights brain rot with knowledge.</p>
-        </div>
-        
-        <div class="footer-col">
-          <h4 class="footer-title">Pages</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="motivation.html">Motivation</a></li>
-            <li><a href="technical.html">How It Works</a></li>
-            <li><a href="examples.html">Examples</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-col">
-          <h4 class="footer-title">Resources</h4>
-          <ul class="footer-links">
-            <li><a href="https://discord.gg/eduly" target="_blank" rel="noopener">Discord</a></li>
-            <li><a href="https://github.com/eduly-ai/eduly" target="_blank" rel="noopener">GitHub</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-col">
-          <h4 class="footer-title">Connect</h4>
-          <div class="footer-socials">
-            <a href="https://discord.gg/eduly" target="_blank" rel="noopener" aria-label="Discord">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
-              </svg>
-            </a>
-            <a href="https://twitter.com/edulyai" target="_blank" rel="noopener" aria-label="Twitter">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-              </svg>
-            </a>
-            <a href="https://github.com/eduly-ai/eduly" target="_blank" rel="noopener" aria-label="GitHub">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <p>&copy; 2026 Eduly. All rights reserved.</p>
-        <p>Made with ⚡ for the curious mind</p>
-      </div>
+      <p>
+        <a href="https://github.com/eduly-ai/eduly" target="_blank" rel="noopener">GitHub</a>
+        · Licensed under CC-BY-NC-SA-4.0
+      </p>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
 </body>
 </html>
-
