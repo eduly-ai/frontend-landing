@@ -9,16 +9,16 @@
 :root {
   /* Light Theme (Default) */
   --bg-primary: #ffffff;
-  --bg-secondary: #f9fafb;
-  --bg-tertiary: #f3f4f6;
+  --bg-secondary: #fdf8f6;
+  --bg-tertiary: #faf0eb;
   --text-primary: #111827;
   --text-secondary: #4b5563;
   --text-muted: #6b7280;
   
-  /* Richer Green for Light Mode */
-  --accent: #059669; /* Emerald 600 */
-  --accent-dim: rgba(5, 150, 105, 0.1);
-  --accent-glow: rgba(5, 150, 105, 0.2);
+  /* Copper for Light Mode */
+  --accent: #c2410c;
+  --accent-dim: rgba(194, 65, 12, 0.1);
+  --accent-glow: rgba(194, 65, 12, 0.2);
   
   --border: #e5e7eb;
   --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
@@ -34,7 +34,7 @@
 }
 
 [data-theme="dark"] {
-  /* Dark Theme (Cyberpunk) */
+  /* Dark Theme */
   --bg-primary: #0c0c0c;
   --bg-secondary: #141414;
   --bg-tertiary: #1a1a1a;
@@ -42,10 +42,10 @@
   --text-secondary: #a0a0a0;
   --text-muted: #666666;
   
-  /* Neon Green for Dark Mode */
-  --accent: #39ff14;
-  --accent-dim: rgba(57, 255, 20, 0.15);
-  --accent-glow: rgba(57, 255, 20, 0.4);
+  /* Peach for Dark Mode */
+  --accent: #fdba74;
+  --accent-dim: rgba(253, 186, 116, 0.15);
+  --accent-glow: rgba(253, 186, 116, 0.4);
   
   --border: #2a2a2a;
   --card-shadow: none;
@@ -414,11 +414,11 @@ p {
   font-size: 0.85rem;
   font-weight: 600;
   margin-bottom: 24px;
-  border: 1px solid rgba(5, 150, 105, 0.2);
+  border: 1px solid rgba(194, 65, 12, 0.2);
 }
 
 [data-theme="dark"] .hero-badge {
-  border: 1px solid rgba(57, 255, 20, 0.2);
+  border: 1px solid rgba(253, 186, 116, 0.2);
 }
 
 .hero-title {
