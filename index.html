@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Eduly - A Manim coding agent that transforms papers into animated educational videos in the style of 3Blue1Brown.">
-  <meta property="og:title" content="Eduly - Anti-Brainrot Doom Learning">
-  <meta property="og:description" content="A Manim coding agent that transforms papers into animated educational videos.">
+  <meta name="description" content="Eduly - Your personal visualisation agent. An education enabler for students, teachers, and researchers to visualise complex concepts instantly.">
+  <meta property="og:title" content="Eduly - The Education Enabler">
+  <meta property="og:description" content="A visualisation agent that transforms concepts into animated educational videos.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://landing.eduly.ai">
   <title>eduly.ai</title>
@@ -37,12 +37,12 @@
   <!-- Hero -->
   <section class="hero-simple">
     <div class="container">
-      <p class="tagline">Anti-Brainrot Doom Learning</p>
-      <h1>Game the brain into educating itself.</h1>
+      <p class="tagline">Visualisation Agent & Education Enabler</p>
+      <h1>Understand anything. Visualise everything.</h1>
       <p class="hero-desc">
-        Eduly is a <strong>Manim coding agent</strong> that transforms complex papers and documents 
-        into short-form animated educational videos — in the style of 
-        <a href="https://www.3blue1brown.com/" target="_blank" rel="noopener">3Blue1Brown</a>.
+        Eduly is a <strong>Visualisation Agent</strong> that empowers learning. Whether you are a 
+        student grasping new concepts, a teacher creating presentation visuals, or a researcher 
+        exploring complex topics, Eduly brings ideas to life with <strong>Manim</strong> animations.
       </p>
       <div class="hero-links">
         <a href="https://github.com/eduly-ai/eduly" class="btn btn-primary" target="_blank" rel="noopener">
@@ -57,34 +57,6 @@
         <a href="https://deepmind.google/models/gemini/" target="_blank" rel="noopener">Gemini</a> + 
         <a href="https://github.com/langchain-ai/deepagents" target="_blank" rel="noopener">DeepAgents</a>
       </p>
-    </div>
-  </section>
-
-  <!-- Video Carousel -->
-  <section class="video-carousel-section" id="demos">
-    <div class="container">
-      <div class="video-carousel">
-        <div class="carousel-track">
-          <div class="carousel-slide active">
-            <p class="demo-video-label">Prototype output: Multi-Head Attention</p>
-            <video class="demo-video" autoplay loop muted playsinline>
-              <source src="assets/media/MultiHeadAttentionScene_3.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="carousel-slide">
-            <p class="demo-video-label">Prototype output: mHC : Manifold Hyper Connections</p>
-            <video class="demo-video" autoplay loop muted playsinline>
-              <source src="assets/media/deepseek_mhc_animation_0.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-        <div class="carousel-nav">
-          <button class="carousel-btn active" data-slide="0" aria-label="Show video 1"></button>
-          <button class="carousel-btn" data-slide="1" aria-label="Show video 2"></button>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -113,6 +85,31 @@ result = animation_client.animate_single(
 )
 
 print(f"Video saved to: {result.video_path}")</code></pre>
+
+      <!-- Video Carousel -->
+      <div class="video-carousel" id="demos">
+        <div class="carousel-track">
+          <div class="carousel-slide active">
+            <p class="demo-video-label">Prototype output: Multi-Head Attention</p>
+            <video class="demo-video" autoplay loop muted playsinline>
+              <source src="assets/media/MultiHeadAttentionScene_3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="carousel-slide">
+            <p class="demo-video-label">Prototype output: mHC : Manifold Hyper Connections</p>
+            <video class="demo-video" autoplay loop muted playsinline>
+              <source src="assets/media/deepseek_mhc_animation_0.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="carousel-nav">
+          <button class="carousel-btn active" data-slide="0" aria-label="Show video 1"></button>
+          <button class="carousel-btn" data-slide="1" aria-label="Show video 2"></button>
+        </div>
+      </div>
+
       <p class="example-note">
         See <a href="https://github.com/eduly-ai/eduly/blob/main/examples/processing.ipynb" target="_blank" rel="noopener">examples/processing.ipynb</a> 
         for a complete walkthrough.
@@ -120,33 +117,29 @@ print(f"Video saved to: {result.video_path}")</code></pre>
     </div>
   </section>
 
-  <!-- The Problem -->
+  <!-- Who is Eduly for? -->
   <section class="section" id="problem">
     <div class="container">
-      <h2>The Problem</h2>
+      <h2>Empowering Education</h2>
       <p>
-        Since the rise of short-form content (TikTok, YouTube Shorts, Instagram Reels), 
-        "brain-rot" has emerged — cognitive decline from content designed for short attention spans.
-      </p>
-      <p>
-        While governments respond with bans, we think there's a better approach: 
-        <strong>there is no equivalent form of "anti-brain-rot"</strong> — until now.
+        Eduly acts as a bridge between complex information and clear understanding.
+        We believe that visualisation is the key to unlocking deep learning for everyone.
       </p>
       <div class="problem-grid">
         <div class="problem-item">
-          <span class="problem-icon">💳</span>
-          <strong>Paywalls</strong>
-          <p>$10-20/month discourages students and casual learners</p>
+          <span class="problem-icon">🎓</span>
+          <strong>Students</strong>
+          <p>Visualise abstract concepts to master your coursework and truly understand the material.</p>
         </div>
         <div class="problem-item">
-          <span class="problem-icon">📝</span>
-          <strong>Old formats</strong>
-          <p>Learning styles that haven't evolved in decades</p>
+          <span class="problem-icon">🏫</span>
+          <strong>Teachers & Lecturers</strong>
+          <p>Auto-generate engaging animations for your presentations to captivate your classroom.</p>
         </div>
         <div class="problem-item">
-          <span class="problem-icon">⏱️</span>
-          <strong>High barrier to entry</strong>
-          <p>Between paywalls, signups, and long onboarding — most people never start</p>
+          <span class="problem-icon">🔬</span>
+          <strong>Researchers</strong>
+          <p>Quickly grasp the core mechanics of new papers and complex topics through generated visuals.</p>
         </div>
       </div>
     </div>
@@ -156,7 +149,7 @@ print(f"Video saved to: {result.video_path}")</code></pre>
   <section class="section section-alt" id="how-it-works">
     <div class="container">
       <h2>How It Works</h2>
-      <p>Eduly uses a three-stage pipeline to convert academic papers into animated educational videos:</p>
+      <p>Eduly uses a three-stage pipeline to turn your educational content into animated explainers:</p>
       
       <div class="pipeline">
         <div class="pipeline-step">
@@ -193,30 +186,6 @@ print(f"Video saved to: {result.video_path}")</code></pre>
     </div>
   </section>
 
-  <!-- Future Work -->
-  <section class="section section-alt" id="future">
-    <div class="container">
-      <h2>Future Work</h2>
-      <div class="future-grid">
-        <div class="future-item">
-          <strong>Narration & TTS</strong>
-          <p>Integration with ElevenLabs, Google Cloud TTS, voice cloning, multi-language support</p>
-        </div>
-        <div class="future-item">
-          <strong>Web & Mobile App</strong>
-          <p>Mobile-first vertical video player with personalized feeds and social features</p>
-        </div>
-        <div class="future-item">
-          <strong>Research Monitoring</strong>
-          <p>Automated arXiv monitoring, trending paper detection, auto-generation pipeline</p>
-        </div>
-        <div class="future-item">
-          <strong>LLM-as-Judge Feedback</strong>
-          <p>Multimodal models evaluating rendered videos against storyboards for quality</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Get Started -->
   <section class="section" id="get-started">
