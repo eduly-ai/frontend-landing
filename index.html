@@ -60,14 +60,40 @@
     </div>
   </section>
 
-  <!-- Quick Example & Video Demo -->
-  <section class="section video-showcase" id="example">
+  <!-- Video Carousel -->
+  <section class="video-carousel-section" id="demos">
     <div class="container">
-      <div class="showcase-grid">
-        <div class="showcase-code">
-          <h2>Quick Example</h2>
-          <p>Process a paper into animated explainers:</p>
-          <pre><code>from eduly import EdulyBreakdownClient, EdulyAnimationClient
+      <div class="video-carousel">
+        <div class="carousel-track">
+          <div class="carousel-slide active">
+            <p class="demo-video-label">Prototype output: Multi-Head Attention</p>
+            <video class="demo-video" autoplay loop muted playsinline>
+              <source src="assets/media/MultiHeadAttentionScene_3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="carousel-slide">
+            <p class="demo-video-label">Prototype output: mHC : Manifold Hyper Connections</p>
+            <video class="demo-video" autoplay loop muted playsinline>
+              <source src="assets/media/deepseek_mhc_animation_0.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="carousel-nav">
+          <button class="carousel-btn active" data-slide="0" aria-label="Show video 1"></button>
+          <button class="carousel-btn" data-slide="1" aria-label="Show video 2"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Example -->
+  <section class="section" id="example">
+    <div class="container">
+      <h2>Quick Example</h2>
+      <p>Process a paper into animated explainers:</p>
+      <pre><code>from eduly import EdulyBreakdownClient, EdulyAnimationClient
 
 # Break down a PDF into atomic topics
 breakdown, _ = breakdown_client.breakdown(
@@ -87,26 +113,10 @@ result = animation_client.animate_single(
 )
 
 print(f"Video saved to: {result.video_path}")</code></pre>
-          <p class="example-note">
-            See <a href="https://github.com/eduly-ai/eduly/blob/main/examples/processing.ipynb" target="_blank" rel="noopener">examples/processing.ipynb</a> 
-            for a complete walkthrough.
-          </p>
-        </div>
-        <div class="showcase-video">
-          <p class="demo-video-label">Prototype output: Multi-Head Attention</p>
-          <video class="demo-video" autoplay loop muted playsinline>
-            <source src="assets/media/MultiHeadAttentionScene_3.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="showcase-video">
-          <p class="demo-video-label">Prototype output: mHC : Manifold Hyper Connections</p>
-          <video class="demo-video" autoplay loop muted playsinline>
-            <source src="assets/media/deepseek_mhc_animation_0.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
+      <p class="example-note">
+        See <a href="https://github.com/eduly-ai/eduly/blob/main/examples/processing.ipynb" target="_blank" rel="noopener">examples/processing.ipynb</a> 
+        for a complete walkthrough.
+      </p>
     </div>
   </section>
 

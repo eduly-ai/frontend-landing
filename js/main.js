@@ -5,6 +5,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   initTheme();
   initSmoothScroll();
+  initCarousel();
 });
 
 // Theme Management
@@ -53,6 +54,27 @@ function initSmoothScroll() {
           behavior: 'smooth'
         });
       }
+    });
+  });
+}
+
+// Video Carousel (for mobile)
+function initCarousel() {
+  const carouselBtns = document.querySelectorAll('.carousel-btn');
+  const carouselSlides = document.querySelectorAll('.carousel-slide');
+  
+  if (!carouselBtns.length || !carouselSlides.length) return;
+  
+  carouselBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const slideIndex = parseInt(btn.dataset.slide, 10);
+      
+      // Update active states
+      carouselBtns.forEach(b => b.classList.remove('active'));
+      carouselSlides.forEach(s => s.classList.remove('active'));
+      
+      btn.classList.add('active');
+      carouselSlides[slideIndex]?.classList.add('active');
     });
   });
 }
